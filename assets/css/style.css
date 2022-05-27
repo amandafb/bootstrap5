@@ -3,6 +3,20 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
   background-color: #252525;
   color: #fff;
@@ -181,24 +195,25 @@ body {
 #mini-banners .col-12 a {
   font-weight: bold;
   color: #fff;
-  font-size: .8rem;
+  font-size: 0.8rem;
   transition: 0.5s;
 }
 
-#mini-banners #mini-banner-3 a{
+#mini-banners #mini-banner-3 a {
   color: #101010;
 }
 
-#mini-banners .col-12 a:hover{
+#mini-banners .col-12 a:hover {
   color: #101010;
 }
 
-#mini-banners #mini-banner-1 a:hover, #mini-banners #mini-banner-3 a:hover{
+#mini-banners #mini-banner-1 a:hover,
+#mini-banners #mini-banner-3 a:hover {
   color: #c09578;
 }
 
 /* Best Sellers */
-#best-sellers{
+#best-sellers {
   padding: 4rem 0;
 }
 
@@ -206,7 +221,7 @@ body {
   margin: 0;
 }
 
-#best-sellers .col-md-3{
+#best-sellers .col-md-3 {
   padding: 0;
 }
 
@@ -221,7 +236,7 @@ body {
 #best-sellers .card {
   text-align: center;
   border-radius: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #best-sellers .card:hover {
@@ -232,18 +247,69 @@ body {
   width: 140px;
   height: 230px;
   margin: 2rem auto;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 #best-sellers .card:hover img {
   transform: scale(1.05);
 }
 
-
 #best-sellers .card .card-category {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
+#best-sellers .card-text {
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: #c09578;
+}
+
+.btn:hover {
+  background-color: #c09578;
+  border-color: #c09578;
+}
+
+/* Bottom banner */
+#bottom-banner {
+  background-color: #101010;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+#bottom-banner .offer-subtitle,
+#bottom-banner .h2 {
+  text-transform: uppercase;
+  font-weight: bol;
+}
+
+#bottom-banner .btn {
+  margin: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+#bottom-banner img {
+  max-width: 175px;
+}
+
+.gradient {
+  height: 800px;
+  width: 100vw;
+  background: linear-gradient(45deg, #000, #101010, #252525, #626262);
+  background-size: 300% 300%;
+  animation: colors 10s ease infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .gradient {
+    height: 500px;
+  }
+}
 
 @media screen and (min-width: 991px) {
   .navbar-brand {
@@ -284,26 +350,26 @@ body {
     text-align: left;
   }
 
-  #best-sellers .card-text {
-    margin: 2rem 0;
-    font-weight: bold;
+  #bottom-banner {
+    padding: 6rem;
   }
 
-.btn {
-    background-color: transparent;
-    border-color: #c09578;
+  #bottom-banner h2 {
+    font-size: 6rem;
   }
 
-  .btn:hover {
-    background-color: #c09578;
-    border-color: #c09578;
+  #bottom-banner .btn {
+    margin: 2rem 2rem 0;
   }
 
+  .gradient {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .carousel-caption {
-   bottom: 2rem;
+    bottom: 2rem;
   }
 
   .carousel-caption h5 {
