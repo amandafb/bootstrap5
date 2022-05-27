@@ -1,3 +1,4 @@
+/* Estilos padrão */
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -126,6 +127,7 @@ body {
   font-size: 1.5rem;
 }
 
+/* Carousel */
 #banners-container {
   padding: 0;
 }
@@ -145,6 +147,7 @@ body {
   margin-bottom: 0;
 }
 
+/* Mini banners */
 #mini-banners {
   margin-top: -3rem;
   z-index: 10;
@@ -194,6 +197,52 @@ body {
   color: #c09578;
 }
 
+/* Best Sellers */
+#best-sellers{
+  padding: 4rem 0;
+}
+
+#best-sellers .row {
+  margin: 0;
+}
+
+#best-sellers .col-md-3{
+  padding: 0;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#best-sellers .card {
+  text-align: center;
+  border-radius: 0;
+  transition: .3s;
+}
+
+#best-sellers .card:hover {
+  box-shadow: rgba(82, 82, 82, 0.2) 0px 8px 20px 0px;
+}
+
+#best-sellers .card img {
+  width: 140px;
+  height: 230px;
+  margin: 2rem auto;
+  transition: .3s;
+}
+
+#best-sellers .card:hover img {
+  transform: scale(1.05);
+}
+
+
+#best-sellers .card .card-category {
+  font-size: .8rem;
+}
 
 
 @media screen and (min-width: 991px) {
@@ -229,6 +278,25 @@ body {
 
   #mini-banners .col-12 {
     max-width: 30%;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  #best-sellers .card-text {
+    margin: 2rem 0;
+    font-weight: bold;
+  }
+
+.btn {
+    background-color: transparent;
+    border-color: #c09578;
+  }
+
+  .btn:hover {
+    background-color: #c09578;
+    border-color: #c09578;
   }
 
 }
